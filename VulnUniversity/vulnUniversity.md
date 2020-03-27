@@ -110,6 +110,8 @@ WantedBy=multi-user.target' > $TF
 /bin/systemctl enable --now $TF
 
 ```
+I'm root
+!["root owned"](img/root-owned.png "root owned")
 ## Maintainning Access
 
 
