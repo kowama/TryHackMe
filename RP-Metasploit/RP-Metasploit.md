@@ -5,6 +5,7 @@
 * #### Rock 'em to the core [Commands]
 * #### Modules for Every Occasion
 msf architecture
+
 ![msf architecture](img/arch.png "msf architecture")
 
 * #### Move that shell !
@@ -38,6 +39,17 @@ msf5 > db_nmap -sV 10.10.209.78
 For more detail go to [ice](/ice)
 
 * #### We're in, now What?
+
+For more detail go to [ice](/ice)
+
 * #### Makin ' Cisco Proud
+
+Routing trough machine to discover network
+
+```
+module : post/multi/manage/autoroute
+
+```
+proxy tunnel [here](https://www.offensive-security.com/metasploit-unleashed/proxytunnels/)
 
 ---

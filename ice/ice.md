@@ -10,7 +10,10 @@ started in RP Metaspoitable [here](/RP-Metasploit)
 we are going to exploit [CVE-2004-1561](https://www.cvedetails.com/cve/CVE-2004-1561/) vulnerability 
 
 * access granted
+
 ![access granted](img/access-granted.png)
+
+
 * privilege escalation
 
 we run this command to find option to escalate privilege
@@ -54,6 +57,7 @@ Activate it first
  run post/windows/manage/enable_rdp
 ```
 Find acount [here](accounts)
+
 ![rdp image](img/rdp.png)
 
 ---
