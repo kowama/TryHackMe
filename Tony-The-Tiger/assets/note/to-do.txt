@@ -1,0 +1,11 @@
+# path : /home/cmnatic
+
+I like to keep a track of the various things I do throughout the day.
+
+Things I have done today:
+ - Added a note for JBoss to read for when he next logs in.
+ - Helped Tony setup his website!
+ - Made sure that I am not an administrator account 
+
+Things to do:
+ - Update my Java! I've heard it's kind of in-secure, but it's such a headache to update. Grrr!
