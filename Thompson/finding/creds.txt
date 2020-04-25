@@ -1,0 +1,2 @@
+url : http://10.10.164.148:8080/manager/
+tomcat:s3cret

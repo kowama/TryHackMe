@@ -36,7 +36,9 @@ gobuster scan found nothing interesting
 
 ### Stego
   
-Let's try to decode the hint given on the website. by applying some stego on the image [thm.jpg](finding/thm.jpg)
+Let's try to decode the hint given on the website. by applying some stego on the image
+
+ [thm.jpg](finding/thm.jpg)
 
 * file type
   
@@ -55,6 +57,7 @@ by oppening the file with hexeditor we found what it's [magic number](https://en
 after changing back the magic number to [jpg](https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5) we found this :
 
 ![Hidden Dir](img/hiden_dir.jpeg)
+
 which give us some hidden directory
 
 #### Enumerate the hidden page
@@ -72,20 +75,25 @@ curl http://10.10.254.50/th1s_1s_h1dd3n/index.php?secret=x
 is the way to submit the secret x, since we know that let do the work with python.
 
 Ours [python script](req.py) do is job very well
+
 ![found](img/found.png)
+
 and we found the right value.
 
 The got a [password](finding/creds.txt) but not is username.
 
 ### Struggle Again
 
-after struggling to find what the password is for i decide to use it with the image [thm.jpg](finding/thm.jpg)
+after struggling to find what the password is for i decide to use it with 
+
+the image [thm.jpg](finding/thm.jpg)
 
 ```shell
 steghide extract -sf thm_normal.jpg
 ```
 
 we found the username but it's encrypted
+
 ![username](img/username.png)
 
 * Crazy
@@ -109,6 +117,7 @@ finally we got the username and password
 * Let SSH in the box
   
 ![SSH Shell ](img/ssh-shell.png)
+
 we can know grab the user flag
 
 ### Priileged Escalation
@@ -121,6 +130,7 @@ find / -type f -user root -perm -4000 -exec ls -ldb {} \; 2>>/dev/null
 ```
 
 we got the following anormal SUID
+
 ![SUID](img/ssui-bin.png)
 
 * Exploit the SUID
