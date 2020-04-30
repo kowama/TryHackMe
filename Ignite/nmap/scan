@@ -1,0 +1,9 @@
+# Nmap 7.80 scan initiated Thu Apr 30 20:18:29 2020 as: nmap -sV -oN nmap/scan 10.10.161.205
+Nmap scan report for 10.10.161.205
+Host is up (0.091s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Apr 30 20:18:56 2020 -- 1 IP address (1 host up) scanned in 27.10 seconds
