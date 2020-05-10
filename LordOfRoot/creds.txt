@@ -1,0 +1,5 @@
+frodo:iwilltakethering
+smeagol:MyPreciousR00t
+aragorn:andMySword
+legolas:andMyBow
+gimli:andMyAxe
