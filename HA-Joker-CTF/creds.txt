@@ -1,0 +1,7 @@
+http://10.10.222.221:8080/
+joker:hannah
+[/adminisrator]
+admin:abcd1234
+
+[mysql]{joomladb}
+joomla:hEHSpvGIaMM1yBNd
