@@ -1,0 +1,38 @@
+
+[23:10:10] [INFO] retrieved: 
+[23:10:19] [ERROR] invalid character detected. retrying..
+[23:10:19] [WARNING] increasing time delay to 5 seconds
+AndMySword
+[23:13:44] [ERROR] invalid character detected. retrying..
+[23:13:44] [WARNING] increasing time delay to 6 seconds
+
+[23:13:44] [INFO] retrieved: aragorn
+[23:15:52] [INFO] retrieved: 4
+[23:16:17] [INFO] retrieved: AndMyBow
+[23:19:32] [INFO] retrieved: l
+[23:20:31] [ERROR] invalid character detected. retrying..
+[23:20:31] [WARNING] increasing time delay to 7 seconds
+egolas
+[23:22:36] [INFO] retrieved: 5
+[23:22:59] [INFO] retrieved: 
+[23:23:30] [ERROR] invalid character detected. retrying..
+[23:23:30] [WARNING] increasing time delay to 8 seconds
+AndMyAxe
+[23:27:53] [INFO] retrieved: gimli
+Database: Webapp
+Table: Users
+[5 entries]
++------+----------+----------------+
+| id   | username | password       |
++------+----------+----------------+
+| 1    | frodo    | iwi            |
+| 2    | smeagol  | MyPreciousR00t |
+| 3    | aragorn  | AndMySword     |
+| 4    | legolas  | AndMyBow       |
+| 5    | gimli    | AndMyAxe       |
++------+----------+----------------+
+
+[23:29:58] [INFO] table 'Webapp.Users' dumped to CSV file '/home/kowama/.sqlmap/output/10.10.138.221/dump/Webapp/Users.csv'
+[23:29:58] [INFO] fetched data logged to text files under '/home/kowama/.sqlmap/output/10.10.138.221'
+
+[*] ending @ 23:29:58 /2020-05-10/
