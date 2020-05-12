@@ -1,0 +1,4 @@
+[SMB]
+S-1-22-1-1000 Unix User\kevin (Local User)
+S-1-22-1-1001 Unix User\sammy (Local User)
+S-1-22-1-1002 Unix User\zach (Local User)

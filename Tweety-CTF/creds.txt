@@ -1,0 +1,10 @@
+tomcat:s3cret
+
+[ftp 2121]
+sammy:samuel123456
+
+[SMB]
+zach:secret
+
+[SSH 81]
+kevin:unforgettablelongpassword123
