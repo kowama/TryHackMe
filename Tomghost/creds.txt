@@ -1,0 +1,6 @@
+[Tomcat 8080]
+/manager
+tomcat:s3cret
+
+[SSH 22]
+skyfuck:8730281lkjlkjdqlksalks
