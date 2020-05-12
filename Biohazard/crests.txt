@@ -1,0 +1,31 @@
+S0pXRkVVS0pKQkxIVVdTWUpFM0VTUlk9
+Hint 1: Crest 1 has been encoded twice
+Hint 2: Crest 1 contanis 14 letters
+Note: You need to collect all 4 crests, combine and decode to reavel another path
+The combination should be crest 1 + crest 2 + crest 3 + crest 4. Also, the combination is a type of encoded base and you need to decode it
+crest 1:
+
+-----------------------------------------------------
+crest 2:
+GVFWK5KHK5WTGTCILE4DKY3DNN4GQQRTM5AVCTKE
+Hint 1: Crest 2 has been encoded twice
+Hint 2: Crest 2 contanis 18 letters
+Note: You need to collect all 4 crests, combine and decode to reavel another path
+The combination should be crest 1 + crest 2 + crest 3 + crest 4. Also, the combination is a type of encoded base and you need to decode it
+
+
+---------------------------------------------------------
+crest 3:
+MDAxMTAxMTAgMDAxMTAwMTEgMDAxMDAwMDAgMDAxMTAwMTEgMDAxMTAwMTEgMDAxMDAwMDAgMDAxMTAxMDAgMDExMDAxMDAgMDAxMDAwMDAgMDAxMTAwMTEgMDAxMTAxMTAgMDAxMDAwMDAgMDAxMTAxMDAgMDAxMTEwMDEgMDAxMDAwMDAgMDAxMTAxMDAgMDAxMTEwMDAgMDAxMDAwMDAgMDAxMTAxMTAgMDExMDAwMTEgMDAxMDAwMDAgMDAxMTAxMTEgMDAxMTAxMTAgMDAxMDAwMDAgMDAxMTAxMTAgMDAxMTAxMDAgMDAxMDAwMDAgMDAxMTAxMDEgMDAxMTAxMTAgMDAxMDAwMDAgMDAxMTAwMTEgMDAxMTEwMDEgMDAxMDAwMDAgMDAxMTAxMTAgMDExMDAwMDEgMDAxMDAwMDAgMDAxMTAxMDEgMDAxMTEwMDEgMDAxMDAwMDAgMDAxMTAxMDEgMDAxMTAxMTEgMDAxMDAwMDAgMDAxMTAwMTEgMDAxMTAxMDEgMDAxMDAwMDAgMDAxMTAwMTEgMDAxMTAwMDAgMDAxMDAwMDAgMDAxMTAxMDEgMDAxMTEwMDAgMDAxMDAwMDAgMDAxMTAwMTEgMDAxMTAwMTAgMDAxMDAwMDAgMDAxMTAxMTAgMDAxMTEwMDA=
+Hint 1: Crest 3 has been encoded three times
+Hint 2: Crest 3 contanis 19 letters
+Note: You need to collect all 4 crests, combine and decode to reavel another path
+The combination should be crest 1 + crest 2 + crest 3 + crest 4. Also, the combination is a type of encoded base and you need to decode it
+
+-------------------------------------------------------------
+crest 4:
+gSUERauVpvKzRpyPpuYz66JDmRTbJubaoArM6CAQsnVwte6zF9J4GGYyun3k5qM9ma4s
+Hint 1: Crest 2 has been encoded twice
+Hint 2: Crest 2 contanis 17 characters
+Note: You need to collect all 4 crests, combine and decode to reavel another path
+The combination should be crest 1 + crest 2 + crest 3 + crest 4. Also, the combination is a type of encoded base and you need to decode it
