@@ -1,0 +1,353 @@
+Starting enum4linux v0.8.9 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Thu May 14 02:31:44 2020
+
+ ========================== 
+|    Target Information    |
+ ========================== 
+Target ........... 10.10.253.215
+RID Range ........ 500-550,1000-1050
+Username ......... ''
+Password ......... ''
+Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none
+
+
+ ===================================================== 
+|    Enumerating Workgroup/Domain on 10.10.253.215    |
+ ===================================================== 
+[+] Got domain/workgroup name: WORKGROUP
+
+ ============================================= 
+|    Nbtstat Information for 10.10.253.215    |
+ ============================================= 
+Looking up status of 10.10.253.215
+	PLETHORA        <00> -         B <ACTIVE>  Workstation Service
+	PLETHORA        <03> -         B <ACTIVE>  Messenger Service
+	PLETHORA        <20> -         B <ACTIVE>  File Server Service
+	..__MSBROWSE__. <01> - <GROUP> B <ACTIVE>  Master Browser
+	WORKGROUP       <00> - <GROUP> B <ACTIVE>  Domain/Workgroup Name
+	WORKGROUP       <1d> -         B <ACTIVE>  Master Browser
+	WORKGROUP       <1e> - <GROUP> B <ACTIVE>  Browser Service Elections
+
+	MAC Address = 00-00-00-00-00-00
+
+ ====================================== 
+|    Session Check on 10.10.253.215    |
+ ====================================== 
+[+] Server 10.10.253.215 allows sessions using username '', password ''
+
+ ============================================ 
+|    Getting domain SID for 10.10.253.215    |
+ ============================================ 
+Domain Name: WORKGROUP
+Domain Sid: (NULL SID)
+[+] Can't determine if host is part of domain or part of a workgroup
+
+ ======================================= 
+|    OS information on 10.10.253.215    |
+ ======================================= 
+[+] Got OS info for 10.10.253.215 from smbclient: 
+[+] Got OS info for 10.10.253.215 from srvinfo:
+	PLETHORA       Wk Sv PrQ Unx NT SNT plethora server (Samba, Ubuntu)
+	platform_id     :	500
+	os version      :	6.1
+	server type     :	0x809a03
+
+ ============================== 
+|    Users on 10.10.253.215    |
+ ============================== 
+index: 0x1 RID: 0x3e8 acb: 0x00000010 Account: zayotic	Name: 	Desc: 
+index: 0x2 RID: 0x3ea acb: 0x00000010 Account: mason	Name: 	Desc: 
+index: 0x3 RID: 0x3e9 acb: 0x00000010 Account: root	Name: root	Desc: 
+
+user:[zayotic] rid:[0x3e8]
+user:[mason] rid:[0x3ea]
+user:[root] rid:[0x3e9]
+
+ ========================================== 
+|    Share Enumeration on 10.10.253.215    |
+ ========================================== 
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	print$          Disk      Printer Drivers
+	public          Disk      
+	private         Disk      
+	IPC$            IPC       IPC Service (plethora server (Samba, Ubuntu))
+SMB1 disabled -- no workgroup available
+
+[+] Attempting to map shares on 10.10.253.215
+//10.10.253.215/print$	Mapping: DENIED, Listing: N/A
+//10.10.253.215/public	Mapping: OK, Listing: OK
+//10.10.253.215/private	Mapping: DENIED, Listing: N/A
+//10.10.253.215/IPC$	[E] Can't understand response:
+NT_STATUS_OBJECT_NAME_NOT_FOUND listing \*
+
+ ===================================================== 
+|    Password Policy Information for 10.10.253.215    |
+ ===================================================== 
+[E] Unexpected error from polenum:
+
+
+[+] Attaching to 10.10.253.215 using a NULL share
+
+[+] Trying protocol 139/SMB...
+
+	[!] Protocol failed: Missing required parameter 'digestmod'.
+
+[+] Trying protocol 445/SMB...
+
+	[!] Protocol failed: Missing required parameter 'digestmod'.
+
+
+[+] Retieved partial password policy with rpcclient:
+
+Password Complexity: Disabled
+Minimum Password Length: 5
+
+
+ =============================== 
+|    Groups on 10.10.253.215    |
+ =============================== 
+
+[+] Getting builtin groups:
+
+[+] Getting builtin group memberships:
+
+[+] Getting local groups:
+
+[+] Getting local group memberships:
+
+[+] Getting domain groups:
+
+[+] Getting domain group memberships:
+
+ ======================================================================== 
+|    Users on 10.10.253.215 via RID cycling (RIDS: 500-550,1000-1050)    |
+ ======================================================================== 
+[I] Found new SID: S-1-5-21-3083221072-2944842581-3799485393
+[I] Found new SID: S-1-22-1
+[I] Found new SID: S-1-5-32
+[+] Enumerating users using SID S-1-5-21-3083221072-2944842581-3799485393 and logon username '', password ''
+S-1-5-21-3083221072-2944842581-3799485393-500 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-501 PLETHORA\nobody (Local User)
+S-1-5-21-3083221072-2944842581-3799485393-502 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-503 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-504 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-505 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-506 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-507 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-508 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-509 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-510 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-511 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-512 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-513 PLETHORA\None (Domain Group)
+S-1-5-21-3083221072-2944842581-3799485393-514 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-515 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-516 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-517 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-518 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-519 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-520 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-521 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-522 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-523 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-524 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-525 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-526 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-527 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-528 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-529 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-530 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-531 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-532 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-533 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-534 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-535 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-536 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-537 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-538 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-539 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-540 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-541 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-542 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-543 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-544 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-545 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-546 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-547 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-548 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-549 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-550 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1000 PLETHORA\zayotic (Local User)
+S-1-5-21-3083221072-2944842581-3799485393-1001 PLETHORA\root (Local User)
+S-1-5-21-3083221072-2944842581-3799485393-1002 PLETHORA\mason (Local User)
+S-1-5-21-3083221072-2944842581-3799485393-1003 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1004 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1005 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1006 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1007 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1008 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1009 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1010 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1011 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1012 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1013 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1014 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1015 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1016 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1017 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1018 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1019 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1020 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1021 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1022 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1023 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1024 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1025 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1026 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1027 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1028 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1029 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1030 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1031 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1032 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1033 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1034 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1035 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1036 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1037 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1038 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1039 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1040 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1041 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1042 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1043 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1044 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1045 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1046 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1047 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1048 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1049 *unknown*\*unknown* (8)
+S-1-5-21-3083221072-2944842581-3799485393-1050 *unknown*\*unknown* (8)
+[+] Enumerating users using SID S-1-22-1 and logon username '', password ''
+S-1-22-1-1000 Unix User\zayotic (Local User)
+S-1-22-1-1001 Unix User\bill (Local User)
+S-1-22-1-1002 Unix User\joe (Local User)
+S-1-22-1-1003 Unix User\john (Local User)
+S-1-22-1-1004 Unix User\jason (Local User)
+S-1-22-1-1005 Unix User\mason (Local User)
+S-1-22-1-1006 Unix User\jeff (Local User)
+S-1-22-1-1007 Unix User\dan (Local User)
+S-1-22-1-1008 Unix User\josh (Local User)
+[+] Enumerating users using SID S-1-5-32 and logon username '', password ''
+S-1-5-32-500 *unknown*\*unknown* (8)
+S-1-5-32-501 *unknown*\*unknown* (8)
+S-1-5-32-502 *unknown*\*unknown* (8)
+S-1-5-32-503 *unknown*\*unknown* (8)
+S-1-5-32-504 *unknown*\*unknown* (8)
+S-1-5-32-505 *unknown*\*unknown* (8)
+S-1-5-32-506 *unknown*\*unknown* (8)
+S-1-5-32-507 *unknown*\*unknown* (8)
+S-1-5-32-508 *unknown*\*unknown* (8)
+S-1-5-32-509 *unknown*\*unknown* (8)
+S-1-5-32-510 *unknown*\*unknown* (8)
+S-1-5-32-511 *unknown*\*unknown* (8)
+S-1-5-32-512 *unknown*\*unknown* (8)
+S-1-5-32-513 *unknown*\*unknown* (8)
+S-1-5-32-514 *unknown*\*unknown* (8)
+S-1-5-32-515 *unknown*\*unknown* (8)
+S-1-5-32-516 *unknown*\*unknown* (8)
+S-1-5-32-517 *unknown*\*unknown* (8)
+S-1-5-32-518 *unknown*\*unknown* (8)
+S-1-5-32-519 *unknown*\*unknown* (8)
+S-1-5-32-520 *unknown*\*unknown* (8)
+S-1-5-32-521 *unknown*\*unknown* (8)
+S-1-5-32-522 *unknown*\*unknown* (8)
+S-1-5-32-523 *unknown*\*unknown* (8)
+S-1-5-32-524 *unknown*\*unknown* (8)
+S-1-5-32-525 *unknown*\*unknown* (8)
+S-1-5-32-526 *unknown*\*unknown* (8)
+S-1-5-32-527 *unknown*\*unknown* (8)
+S-1-5-32-528 *unknown*\*unknown* (8)
+S-1-5-32-529 *unknown*\*unknown* (8)
+S-1-5-32-530 *unknown*\*unknown* (8)
+S-1-5-32-531 *unknown*\*unknown* (8)
+S-1-5-32-532 *unknown*\*unknown* (8)
+S-1-5-32-533 *unknown*\*unknown* (8)
+S-1-5-32-534 *unknown*\*unknown* (8)
+S-1-5-32-535 *unknown*\*unknown* (8)
+S-1-5-32-536 *unknown*\*unknown* (8)
+S-1-5-32-537 *unknown*\*unknown* (8)
+S-1-5-32-538 *unknown*\*unknown* (8)
+S-1-5-32-539 *unknown*\*unknown* (8)
+S-1-5-32-540 *unknown*\*unknown* (8)
+S-1-5-32-541 *unknown*\*unknown* (8)
+S-1-5-32-542 *unknown*\*unknown* (8)
+S-1-5-32-543 *unknown*\*unknown* (8)
+S-1-5-32-544 BUILTIN\Administrators (Local Group)
+S-1-5-32-545 BUILTIN\Users (Local Group)
+S-1-5-32-546 BUILTIN\Guests (Local Group)
+S-1-5-32-547 BUILTIN\Power Users (Local Group)
+S-1-5-32-548 BUILTIN\Account Operators (Local Group)
+S-1-5-32-549 BUILTIN\Server Operators (Local Group)
+S-1-5-32-550 BUILTIN\Print Operators (Local Group)
+S-1-5-32-1000 *unknown*\*unknown* (8)
+S-1-5-32-1001 *unknown*\*unknown* (8)
+S-1-5-32-1002 *unknown*\*unknown* (8)
+S-1-5-32-1003 *unknown*\*unknown* (8)
+S-1-5-32-1004 *unknown*\*unknown* (8)
+S-1-5-32-1005 *unknown*\*unknown* (8)
+S-1-5-32-1006 *unknown*\*unknown* (8)
+S-1-5-32-1007 *unknown*\*unknown* (8)
+S-1-5-32-1008 *unknown*\*unknown* (8)
+S-1-5-32-1009 *unknown*\*unknown* (8)
+S-1-5-32-1010 *unknown*\*unknown* (8)
+S-1-5-32-1011 *unknown*\*unknown* (8)
+S-1-5-32-1012 *unknown*\*unknown* (8)
+S-1-5-32-1013 *unknown*\*unknown* (8)
+S-1-5-32-1014 *unknown*\*unknown* (8)
+S-1-5-32-1015 *unknown*\*unknown* (8)
+S-1-5-32-1016 *unknown*\*unknown* (8)
+S-1-5-32-1017 *unknown*\*unknown* (8)
+S-1-5-32-1018 *unknown*\*unknown* (8)
+S-1-5-32-1019 *unknown*\*unknown* (8)
+S-1-5-32-1020 *unknown*\*unknown* (8)
+S-1-5-32-1021 *unknown*\*unknown* (8)
+S-1-5-32-1022 *unknown*\*unknown* (8)
+S-1-5-32-1023 *unknown*\*unknown* (8)
+S-1-5-32-1024 *unknown*\*unknown* (8)
+S-1-5-32-1025 *unknown*\*unknown* (8)
+S-1-5-32-1026 *unknown*\*unknown* (8)
+S-1-5-32-1027 *unknown*\*unknown* (8)
+S-1-5-32-1028 *unknown*\*unknown* (8)
+S-1-5-32-1029 *unknown*\*unknown* (8)
+S-1-5-32-1030 *unknown*\*unknown* (8)
+S-1-5-32-1031 *unknown*\*unknown* (8)
+S-1-5-32-1032 *unknown*\*unknown* (8)
+S-1-5-32-1033 *unknown*\*unknown* (8)
+S-1-5-32-1034 *unknown*\*unknown* (8)
+S-1-5-32-1035 *unknown*\*unknown* (8)
+S-1-5-32-1036 *unknown*\*unknown* (8)
+S-1-5-32-1037 *unknown*\*unknown* (8)
+S-1-5-32-1038 *unknown*\*unknown* (8)
+S-1-5-32-1039 *unknown*\*unknown* (8)
+S-1-5-32-1040 *unknown*\*unknown* (8)
+S-1-5-32-1041 *unknown*\*unknown* (8)
+S-1-5-32-1042 *unknown*\*unknown* (8)
+S-1-5-32-1043 *unknown*\*unknown* (8)
+S-1-5-32-1044 *unknown*\*unknown* (8)
+S-1-5-32-1045 *unknown*\*unknown* (8)
+S-1-5-32-1046 *unknown*\*unknown* (8)
+S-1-5-32-1047 *unknown*\*unknown* (8)
+S-1-5-32-1048 *unknown*\*unknown* (8)
+S-1-5-32-1049 *unknown*\*unknown* (8)
+S-1-5-32-1050 *unknown*\*unknown* (8)
+
+ ============================================== 
+|    Getting printer info for 10.10.253.215    |
+ ============================================== 
+No printers returned.
+
+
+enum4linux complete on Thu May 14 03:08:27 2020
+
