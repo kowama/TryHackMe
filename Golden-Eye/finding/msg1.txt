@@ -1,0 +1,12 @@
++OK 544 octets                                                                                                                                                                                     
+Return-Path: <root@127.0.0.1.goldeneye>                                                                                                                                                            
+X-Original-To: boris                                                                                                                                                                               
+Delivered-To: boris@ubuntu                                                                                                                                                                         
+Received: from ok (localhost [127.0.0.1])                                                                                                                                                          
+        by ubuntu (Postfix) with SMTP id D9E47454B1                                                                                                                                                
+        for <boris>; Tue, 2 Apr 1990 19:22:14 -0700 (PDT)                                                                                                                                          
+Message-Id: <20180425022326.D9E47454B1@ubuntu>                                                                                                                                                     
+Date: Tue, 2 Apr 1990 19:22:14 -0700 (PDT)                                                                                                                                                         
+From: root@127.0.0.1.goldeneye                                                                                                                                                                     
+                                                                                                                                                                                                   
+Boris, this is admin. You can electronically communicate to co-workers and students here. I'm not going to scan emails for security risks because I trust you and the other admins here.  

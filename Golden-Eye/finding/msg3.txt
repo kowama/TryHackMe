@@ -1,0 +1,20 @@
++OK 921 octets
+Return-Path: <alec@janus.boss>
+X-Original-To: boris
+Delivered-To: boris@ubuntu
+Received: from janus (localhost [127.0.0.1])
+        by ubuntu (Postfix) with ESMTP id 4B9F4454B1
+        for <boris>; Wed, 22 Apr 1995 19:51:48 -0700 (PDT)
+Message-Id: <20180425025235.4B9F4454B1@ubuntu>
+Date: Wed, 22 Apr 1995 19:51:48 -0700 (PDT)
+From: alec@janus.boss
+
+Boris,
+
+Your cooperation with our syndicate will pay off big. Attached are the final access codes for GoldenEye. Place them in a hidden file within the root directory of this server then remove from this email. There can only be one set of these acces codes, and we need to secure them for the final execution. If they are retrieved and captured our plan will crash and burn!
+
+Once Xenia gets access to the training site and becomes familiar with the GoldenEye Terminal codes we will push to our final stages....
+
+PS - Keep security tight or we will be compromised.
+
+.

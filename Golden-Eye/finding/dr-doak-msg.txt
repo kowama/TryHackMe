@@ -1,0 +1,18 @@
+Return-Path: <doak@ubuntu>
+X-Original-To: doak
+Delivered-To: doak@ubuntu
+Received: from doak (localhost [127.0.0.1])
+        by ubuntu (Postfix) with SMTP id 97DC24549D
+        for <doak>; Tue, 30 Apr 1995 20:47:24 -0700 (PDT)
+Message-Id: <20180425034731.97DC24549D@ubuntu>
+Date: Tue, 30 Apr 1995 20:47:24 -0700 (PDT)
+From: doak@ubuntu
+
+James,
+If you're reading this, congrats you've gotten this far. You know how tradecraft works right?
+
+Because I don't. Go to our training site and login to my account....dig until you can exfiltrate further information......
+
+username: dr_doak
+password: 4England!
+
