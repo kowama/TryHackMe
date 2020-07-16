@@ -39,6 +39,7 @@ We are not going to exploit this
 #### Shell upload
 
 we use ours admin access to upload a php reverse shell
+
 ![rshell](img/rshell.png)
 
 ### Geting a user shell
@@ -56,8 +57,8 @@ and follow the link <http://cmess.thm/assets/php-reverse-shell.php>
 ### linPEAS
 
 - /var/www/html/src/core/views/admin/settings.php
--/var/www/html/src/Cocur/Slugify/bin
--/opt/.password.bak
+- /var/www/html/src/Cocur/Slugify/bin
+- /opt/.password.bak
 
 by looking at [/opt/.password.bak](..password.bak) we found andre password
 

