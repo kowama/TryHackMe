@@ -20,4 +20,4 @@ python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SO
 
 ## Day 8 : Insecure Deserialization
 
-THM{compl3ted_the_quiz}
+## Day 9 : Components With Known Vulnerabilities
