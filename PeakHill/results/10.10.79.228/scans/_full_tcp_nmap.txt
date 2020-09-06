@@ -1,0 +1,105 @@
+# Nmap 7.80 scan initiated Sun Sep  6 09:13:10 2020 as: nmap -vv --reason -Pn -A --osscan-guess --version-all -p- -oN /home/kowama/Documents/TryHackMe/PeakHill/results/10.10.79.228/scans/_full_tcp_nmap.txt -oX /home/kowama/Documents/TryHackMe/PeakHill/results/10.10.79.228/scans/xml/_full_tcp_nmap.xml 10.10.79.228
+Nmap scan report for 10.10.79.228
+Host is up, received user-set (0.11s latency).
+Scanned at 2020-09-06 09:13:12 +01 for 937s
+Not shown: 65531 filtered ports
+Reason: 65531 no-responses
+PORT     STATE  SERVICE  REASON         VERSION
+20/tcp   closed ftp-data reset ttl 63
+21/tcp   open   ftp      syn-ack ttl 63 vsftpd 3.0.3
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_-rw-r--r--    1 ftp      ftp            17 May 15 18:37 test.txt
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.11.14.121
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 4
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+22/tcp   open   ssh      syn-ack ttl 63 OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 04:d5:75:9d:c1:40:51:37:73:4c:42:30:38:b8:d6:df (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDeP0io1wWrWYeCtLqYTCxkE3UILotD77FRSxrUy0IZbmUBpYNt+B2NWt1kXPLXldnAGcjyEKIN36lcHXbxPxfPXrGQGfzdKUxE9kRVrLSrkd702cr2AoRp7sjiaJ/bsIKEHwWlNgJJedYdzutT73SUJTnVUS5HsJ9pKERRjI3jdAwJFjslniRIF/xA55myN/0zleZAmQ3PPs7UMqFoU8wxBGj2gLDrkOEszpbsRZu2qhZtGMCpRlxIs5ZKl+JPrF6laG3Em1oh7tPi6Qibf9p6P92iVy7bLa0s0kFdEn/lvp75vUJxUaeoAtKhV482jU6R/Bn1VSSccafgq3wu5QHV
+|   256 7f:95:1a:d7:59:2f:19:06:ea:c1:55:ec:58:35:0c:05 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGXY1pEPDvAMnRbMdsY2+G5K3fMuTAAMXK+ekVlE/cbfv8GOnvTOJmECPgjXOxbknHltv2OCZi7L2NPxUNaTkGQ=
+|   256 a5:15:36:92:1c:aa:59:9b:8a:d8:ea:13:c9:c0:ff:b6 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINsblxrCR5cC4mDOS8S/+KyqlCwu+cGETl6ujJWgevhN
+7321/tcp open   swx?     syn-ack ttl 63
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, DistCCD, FourOhFourRequest, GenericLines, GetRequest, HELP4STOMP, HTTPOptions, Hello, Help, JavaRMI, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, Memcache, NCP, NessusTPv10, NessusTPv11, NessusTPv12, NotesRPC, OfficeScan, RPCCheck, RTSPRequest, Radmin, SIPOptions, SMBProgNeg, SSLSessionReq, SSLv23SessionReq, Socks4, Socks5, TLSSessionReq, TerminalServer, TerminalServerCookie, Verifier, VerifierAdvanced, WMSRequest, WWWOFFLEctrlstat, X11Probe, ms-sql-s, mydoom, oracle-tns: 
+|     Username: Password:
+|   NULL: 
+|_    Username:
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port7321-TCP:V=7.80%I=9%D=9/6%Time=5F549BC0%P=x86_64-pc-linux-gnu%r(NUL
+SF:L,A,"Username:\x20")%r(GenericLines,14,"Username:\x20Password:\x20")%r(
+SF:GetRequest,14,"Username:\x20Password:\x20")%r(HTTPOptions,14,"Username:
+SF:\x20Password:\x20")%r(RTSPRequest,14,"Username:\x20Password:\x20")%r(RP
+SF:CCheck,14,"Username:\x20Password:\x20")%r(DNSVersionBindReqTCP,14,"User
+SF:name:\x20Password:\x20")%r(DNSStatusRequestTCP,14,"Username:\x20Passwor
+SF:d:\x20")%r(Hello,14,"Username:\x20Password:\x20")%r(Help,14,"Username:\
+SF:x20Password:\x20")%r(SSLSessionReq,14,"Username:\x20Password:\x20")%r(T
+SF:erminalServerCookie,14,"Username:\x20Password:\x20")%r(TLSSessionReq,14
+SF:,"Username:\x20Password:\x20")%r(SSLv23SessionReq,14,"Username:\x20Pass
+SF:word:\x20")%r(Kerberos,14,"Username:\x20Password:\x20")%r(SMBProgNeg,14
+SF:,"Username:\x20Password:\x20")%r(X11Probe,14,"Username:\x20Password:\x2
+SF:0")%r(FourOhFourRequest,14,"Username:\x20Password:\x20")%r(LPDString,14
+SF:,"Username:\x20Password:\x20")%r(LDAPSearchReq,14,"Username:\x20Passwor
+SF:d:\x20")%r(LDAPBindReq,14,"Username:\x20Password:\x20")%r(SIPOptions,14
+SF:,"Username:\x20Password:\x20")%r(LANDesk-RC,14,"Username:\x20Password:\
+SF:x20")%r(TerminalServer,14,"Username:\x20Password:\x20")%r(NCP,14,"Usern
+SF:ame:\x20Password:\x20")%r(NotesRPC,14,"Username:\x20Password:\x20")%r(D
+SF:istCCD,14,"Username:\x20Password:\x20")%r(JavaRMI,14,"Username:\x20Pass
+SF:word:\x20")%r(Radmin,14,"Username:\x20Password:\x20")%r(NessusTPv12,14,
+SF:"Username:\x20Password:\x20")%r(NessusTPv11,14,"Username:\x20Password:\
+SF:x20")%r(NessusTPv10,14,"Username:\x20Password:\x20")%r(WMSRequest,14,"U
+SF:sername:\x20Password:\x20")%r(oracle-tns,14,"Username:\x20Password:\x20
+SF:")%r(mydoom,14,"Username:\x20Password:\x20")%r(WWWOFFLEctrlstat,14,"Use
+SF:rname:\x20Password:\x20")%r(Verifier,14,"Username:\x20Password:\x20")%r
+SF:(VerifierAdvanced,14,"Username:\x20Password:\x20")%r(Socks5,14,"Usernam
+SF:e:\x20Password:\x20")%r(Socks4,14,"Username:\x20Password:\x20")%r(Offic
+SF:eScan,14,"Username:\x20Password:\x20")%r(ms-sql-s,14,"Username:\x20Pass
+SF:word:\x20")%r(HELP4STOMP,14,"Username:\x20Password:\x20")%r(Memcache,14
+SF:,"Username:\x20Password:\x20");
+Device type: general purpose|specialized|storage-misc|WAP|printer
+Running (JUST GUESSING): Linux 3.X|4.X|2.6.X|2.4.X (91%), Crestron 2-Series (89%), HP embedded (89%), Asus embedded (88%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4 cpe:/o:crestron:2_series cpe:/h:hp:p2000_g3 cpe:/o:linux:linux_kernel:2.6.22 cpe:/h:asus:rt-n56u cpe:/o:linux:linux_kernel:3.4 cpe:/o:linux:linux_kernel:2.4
+OS fingerprint not ideal because: Didn't receive UDP response. Please try again with -sSU
+Aggressive OS guesses: Linux 3.10 - 3.13 (91%), Linux 3.10 - 4.11 (90%), Linux 3.13 (90%), Linux 3.13 or 4.2 (90%), Linux 3.2 - 3.8 (90%), Linux 4.2 (90%), Linux 4.4 (90%), Crestron XPanel control system (89%), Linux 3.12 (89%), Linux 3.2 - 3.5 (89%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=9/6%OT=21%CT=20%CU=%PV=Y%DS=2%DC=T%G=N%TM=5F549DC1%P=x86_64-pc-linux-gnu)
+SEQ(SP=FF%GCD=1%ISR=109%TI=Z%CI=I%II=I%TS=8)
+OPS(O1=M508ST11NW6%O2=M508ST11NW6%O3=M508NNT11NW6%O4=M508ST11NW6%O5=M508ST11NW6%O6=M508ST11)
+WIN(W1=68DF%W2=68DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)
+ECN(R=Y%DF=Y%TG=40%W=6903%O=M508NNSNW6%CC=Y%Q=)
+T1(R=Y%DF=Y%TG=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=Y%DF=Y%TG=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=Y%TG=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=Y%TG=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=N)
+U1(R=N)
+IE(R=Y%DFI=N%TG=40%CD=S)
+
+Uptime guess: 0.016 days (since Sun Sep  6 09:06:29 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=255 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 20/tcp)
+HOP RTT       ADDRESS
+1   117.05 ms 10.11.0.1
+2   115.89 ms 10.10.79.228
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Sep  6 09:28:49 2020 -- 1 IP address (1 host up) scanned in 939.46 seconds

@@ -1,0 +1,12 @@
+[*] ftp found on tcp/21.
+
+
+
+[*] ssh found on tcp/22.
+
+
+
+[*] swx found on tcp/7321.
+
+
+
